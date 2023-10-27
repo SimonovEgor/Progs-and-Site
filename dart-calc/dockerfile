@@ -1,0 +1,7 @@
+FROM dart:3.2.0-42.2.beta-sdk
+
+WORKDIR /dart/proj
+
+COPY calc.dart /dart/proj
+
+CMD [ "dart", "calc.dart" ]
